@@ -1,0 +1,10 @@
+<form action="/create" method="post">
+  <input type="text" name="username" placeholder="Enter Twitter Handle">
+  <input type="submit" value"Find">
+</form>
+  <h1>LET'S TWEET!!!</h1>
+  <ul>
+  <% @users.each do |user| %>
+    <li><a href='/<%= user.username %>'><%= user.username %></a></li>
+  <% end %>
+  </ul>
